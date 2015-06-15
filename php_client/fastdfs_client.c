@@ -18,14 +18,15 @@
 #include <stdio.h>
 #include <errno.h>
 #include <time.h>
-#include "fdfs_client.h"
-#include "logger.h"
-#include "sockopt.h"
-#include "fdfs_global.h"
-#include "shared_func.h"
-#include "client_global.h"
+
+#include <fastdfs/fdfs_client.h>
+#include <fastcommon/logger.h>
+#include <fastcommon/sockopt.h>
+#include <fastdfs/fdfs_global.h>
+#include <fastcommon/shared_func.h>
+#include <fastdfs/client_global.h>
 #include "fastdfs_client.h"
-#include "fdfs_http_shared.h"
+#include <fastdfs/fdfs_http_shared.h>
 
 typedef struct
 {
