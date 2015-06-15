@@ -32,8 +32,8 @@
 #include <errno.h>
 #include <ucontext.h>
 #include <dlfcn.h>
-#include "logger.h"
-#include "shared_func.h"
+#include <fastcommon/logger.h>
+#include <fastcommon/shared_func.h>
 #ifndef NO_CPP_DEMANGLE
 #include <cxxabi.h>
 #ifdef __cplusplus

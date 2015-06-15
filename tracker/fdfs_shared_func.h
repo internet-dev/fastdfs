@@ -11,8 +11,8 @@
 #ifndef _FDFS_SHARED_FUNC_H
 #define _FDFS_SHARED_FUNC_H
 
-#include "common_define.h"
-#include "ini_file_reader.h"
+#include <fastcommon/common_define.h>
+#include <fastcommon/ini_file_reader.h>
 #include "tracker_types.h"
 
 #ifdef __cplusplus
