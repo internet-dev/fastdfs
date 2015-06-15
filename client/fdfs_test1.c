@@ -13,12 +13,13 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+
 #include "fdfs_client.h"
 #include "fdfs_global.h"
-#include "base64.h"
+#include <fastcommon/base64.h>
 #include "fdfs_http_shared.h"
-#include "sockopt.h"
-#include "logger.h"
+#include <fastcommon/sockopt.h>
+#include <fastcommon/logger.h>
 
 int writeToFileCallback(void *arg, const int64_t file_size, const char *data, \
                 const int current_size)
