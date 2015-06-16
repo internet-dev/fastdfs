@@ -3,8 +3,10 @@
 COMPILE = $(CC) $(CFLAGS)
 INC_PATH = -I. -Itrunk_mgr -I../common -I../tracker -I../client -Ifdht_client -I/usr/include/fastcommon
 LIB_PATH = $(LIBS)  -lfastcommon
-TARGET_PATH = $(TARGET_PREFIX)/bin
-CONFIG_PATH = $(TARGET_CONF_PATH)
+
+PREFIX ?=/usr/local
+TARGET_PATH = $(PREFIX)/bin
+CONFIG_PATH = $(PREFIX)/etc
 
 SHARED_OBJS = ../common/fdfs_global.o \
               ../tracker/fdfs_shared_func.o ../tracker/tracker_proto.o \

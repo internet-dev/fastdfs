@@ -5,10 +5,12 @@ ENABLE_STATIC_LIB = $(ENABLE_STATIC_LIB)
 ENABLE_SHARED_LIB = $(ENABLE_SHARED_LIB)
 INC_PATH = -I../common -I../tracker -I/usr/include/fastcommon
 LIB_PATH = $(LIBS) -lfastcommon
-TARGET_PATH = $(TARGET_PREFIX)/bin
-TARGET_LIB = $(TARGET_PREFIX)/lib64
-TARGET_INC = $(TARGET_PREFIX)/include
-CONFIG_PATH = $(TARGET_CONF_PATH)
+
+PREFIX ?=/usr/local
+TARGET_PATH = $(PREFIX)/bin
+CONFIG_PATH = $(PREFIX)/etc
+TARGET_LIB  = $(PREFIX)/lib
+TARGET_INC  = $(PREFIX)/include
 
 FDFS_STATIC_OBJS = ../common/fdfs_global.o ../common/fdfs_http_shared.o \
                    ../common/mime_file_parser.o ../tracker/tracker_proto.o \
