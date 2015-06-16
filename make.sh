@@ -139,6 +139,7 @@ if [ $have_pthread -eq 0 ] && [ "$uname" != "Darwin" ]; then
       echo -E 'Require pthread lib, please check!'
       exit 2
    fi
+   LIBS="$LIBS -ldl"
 fi
 
 TRACKER_EXTRA_OBJS=''
