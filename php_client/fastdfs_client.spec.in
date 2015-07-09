@@ -32,9 +32,9 @@ make
 %install
 rm -rf %{buildroot}
 
-mkdir -p %{buildroot}/usr/lib64/php/modules
+mkdir -p %{buildroot}/usr/lib/php/modules
 mkdir -p %{buildroot}/etc/php.d
-cp -f .libs/fastdfs_client.so  %{buildroot}/usr/lib64/php/modules/
+cp -f .libs/fastdfs_client.so  %{buildroot}/usr/lib/php/modules/
 cp -f fastdfs_client.ini %{buildroot}/etc/php.d/fastdfs_client.ini.sample
 
 #make install IGNORE_MAN_GROUP=y DOC_DIR=%{_docdir}/%{name}-%{version} INIT_DIR=%{_initrddir}

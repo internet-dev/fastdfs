@@ -74,11 +74,6 @@ else
 fi
 
 LIBS='-L/usr/local/lib -L/usr/lib'
-#if [ $OS_BITS -eq 64 ]; then
-#  LIBS='-L/usr/lib64'
-#else
-#  LIBS='-L/usr/lib'
-#fi
 
 uname=$(uname)
 if [ "$uname" = "Linux" ]; then

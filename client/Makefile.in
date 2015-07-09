@@ -70,7 +70,7 @@ install:
 	cp -f $(ALL_PRGS) $(TARGET_PATH)
 	if [ $(ENABLE_STATIC_LIB) -eq 1 ]; then cp -f $(STATIC_LIBS) $(TARGET_LIB); fi
 	if [ $(ENABLE_SHARED_LIB) -eq 1 ]; then cp -f $(CLIENT_SHARED_LIBS) $(TARGET_LIB); fi
-
+	
 	mkdir -p $(TARGET_INC)/fastdfs
 	cp -f $(FDFS_HEADER_FILES) $(TARGET_INC)/fastdfs
 	if [ ! -f $(CONFIG_PATH)/client.conf.sample ]; then cp -f ../conf/client.conf $(CONFIG_PATH)/client.conf.sample; fi

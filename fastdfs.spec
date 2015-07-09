@@ -95,7 +95,7 @@ DESTDIR=$RPM_BUILD_ROOT ./make.sh install
 /etc/fdfs/storage.conf.sample
 
 %files -n %{FDFSClient}
-/usr/lib64/libfdfsclient*
+/usr/local/lib/libfdfsclient*
 /etc/fdfs/client.conf.sample
 
 %files -n %{FDFSClient}-devel

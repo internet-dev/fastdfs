@@ -19,10 +19,5 @@ TARGET_LIB="$(TARGET_PREFIX)/lib"
 if [ "`id -u`" = "0" ]; then
   ln -fs $TARGET_LIB/libfastcommon.so.1 /usr/lib/libfastcommon.so
   ln -fs $TARGET_LIB/libfdfsclient.so.1 /usr/lib/libfdfsclient.so
-
-  if [ "$OS_BITS" = "8" ]; then
-     ln -fs $TARGET_LIB/libfastcommon.so.1 /usr/lib64/libfastcommon.so
-     ln -fs $TARGET_LIB/libfdfsclient.so.1 /usr/lib64/libfdfsclient.so
-  fi
 fi
 
